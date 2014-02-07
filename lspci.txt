@@ -1,0 +1,168 @@
+00:00.0 Host bridge: Intel Corporation 3rd Gen Core processor DRAM Controller (rev 09)
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, fast devsel, latency 0
+	Capabilities: <access denied>
+
+00:01.0 PCI bridge: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor PCI Express Root Port (rev 09) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 00005000-00005fff
+	Memory behind bridge: f0000000-f10fffff
+	Prefetchable memory behind bridge: 00000000c0000000-00000000d1ffffff
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:02.0 VGA compatible controller: Intel Corporation 3rd Gen Core processor Graphics Controller (rev 09) (prog-if 00 [VGA controller])
+	Subsystem: Lenovo Device 21f4
+	Flags: bus master, fast devsel, latency 0, IRQ 49
+	Memory at f1400000 (64-bit, non-prefetchable) [size=4M]
+	Memory at e0000000 (64-bit, prefetchable) [size=256M]
+	I/O ports at 6000 [size=64]
+	Expansion ROM at <unassigned> [disabled]
+	Capabilities: <access denied>
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+00:14.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller (rev 04) (prog-if 30 [XHCI])
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, medium devsel, latency 0, IRQ 43
+	Memory at f3920000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_hcd
+
+00:16.0 Communication controller: Intel Corporation 7 Series/C210 Series Chipset Family MEI Controller #1 (rev 04)
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, fast devsel, latency 0, IRQ 45
+	Memory at f3935000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: <access denied>
+	Kernel driver in use: mei_me
+	Kernel modules: mei_me
+
+00:16.3 Serial controller: Intel Corporation 7 Series/C210 Series Chipset Family KT Controller (rev 04) (prog-if 02 [16550])
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, 66MHz, fast devsel, latency 0, IRQ 19
+	I/O ports at 60b0 [size=8]
+	Memory at f393c000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: serial
+
+00:19.0 Ethernet controller: Intel Corporation 82579LM Gigabit Network Connection (rev 04)
+	Subsystem: Lenovo Device 21f3
+	Flags: fast devsel, IRQ 20
+	Memory at f3900000 (32-bit, non-prefetchable) [disabled] [size=128K]
+	Memory at f393b000 (32-bit, non-prefetchable) [disabled] [size=4K]
+	I/O ports at 6080 [disabled] [size=32]
+	Capabilities: <access denied>
+	Kernel driver in use: e1000e
+	Kernel modules: e1000e
+
+00:1a.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #2 (rev 04) (prog-if 20 [EHCI])
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, medium devsel, latency 0, IRQ 16
+	Memory at f393a000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: <access denied>
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1b.0 Audio device: Intel Corporation 7 Series/C210 Series Chipset Family High Definition Audio Controller (rev 04)
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, fast devsel, latency 0, IRQ 47
+	Memory at f3930000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+00:1c.0 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 1 (rev c4) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: 00004000-00004fff
+	Memory behind bridge: f3100000-f38fffff
+	Prefetchable memory behind bridge: 00000000f1800000-00000000f1ffffff
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:1c.1 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 2 (rev c4) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=0
+	Memory behind bridge: f3000000-f30fffff
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:1c.2 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 3 (rev c4) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=04, subordinate=0b, sec-latency=0
+	I/O behind bridge: 00003000-00003fff
+	Memory behind bridge: f2800000-f2ffffff
+	Prefetchable memory behind bridge: 00000000f2000000-00000000f27fffff
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:1d.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #1 (rev 04) (prog-if 20 [EHCI])
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, medium devsel, latency 0, IRQ 23
+	Memory at f3939000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: <access denied>
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1f.0 ISA bridge: Intel Corporation QM77 Express Chipset LPC Controller (rev 04)
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, medium devsel, latency 0
+	Capabilities: <access denied>
+	Kernel driver in use: lpc_ich
+	Kernel modules: lpc_ich
+
+00:1f.2 SATA controller: Intel Corporation 7 Series Chipset Family 6-port SATA Controller [AHCI mode] (rev 04) (prog-if 01 [AHCI 1.0])
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 44
+	I/O ports at 60a8 [size=8]
+	I/O ports at 60bc [size=4]
+	I/O ports at 60a0 [size=8]
+	I/O ports at 60b8 [size=4]
+	I/O ports at 6060 [size=32]
+	Memory at f3938000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: <access denied>
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:1f.3 SMBus: Intel Corporation 7 Series/C210 Series Chipset Family SMBus Controller (rev 04)
+	Subsystem: Lenovo Device 21f3
+	Flags: medium devsel, IRQ 18
+	Memory at f3934000 (64-bit, non-prefetchable) [size=256]
+	I/O ports at efa0 [size=32]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+
+01:00.0 VGA compatible controller: NVIDIA Corporation GF108M [NVS 5400M] (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: Lenovo Device 21f4
+	Flags: bus master, fast devsel, latency 0, IRQ 16
+	Memory at f0000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at c0000000 (64-bit, prefetchable) [size=256M]
+	Memory at d0000000 (64-bit, prefetchable) [size=32M]
+	I/O ports at 5000 [size=128]
+	[virtual] Expansion ROM at f1000000 [disabled] [size=512K]
+	Capabilities: <access denied>
+	Kernel driver in use: nvidia
+	Kernel modules: nouveau, nvidia
+
+02:00.0 System peripheral: Ricoh Co Ltd PCIe SDXC/MMC Host Controller (rev 07) (prog-if 01)
+	Subsystem: Lenovo Device 21f3
+	Flags: bus master, fast devsel, latency 0, IRQ 16
+	Memory at f3100000 (32-bit, non-prefetchable) [size=256]
+	Capabilities: <access denied>
+	Kernel driver in use: sdhci-pci
+	Kernel modules: sdhci_pci
+
+03:00.0 Network controller: Intel Corporation Centrino Advanced-N 6205 [Taylor Peak] (rev 34)
+	Subsystem: Intel Corporation Centrino Advanced-N 6205 AGN
+	Flags: bus master, fast devsel, latency 0, IRQ 48
+	Memory at f3000000 (64-bit, non-prefetchable) [size=8K]
+	Capabilities: <access denied>
+	Kernel driver in use: iwlwifi
+	Kernel modules: iwlwifi
+
