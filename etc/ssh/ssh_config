@@ -19,7 +19,7 @@
 
 # Host *
 #   ForwardAgent no
-ForwardX11 yes
+#ForwardX11 yes
 #   RhostsRSAAuthentication no
 #   RSAAuthentication yes
 #   PasswordAuthentication yes
