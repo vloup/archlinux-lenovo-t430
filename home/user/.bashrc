@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # aliases
-alias rcon='java -jar ~/JaRCON.jar'
+alias rcon='java -jar ~/applications/JaRCON/JaRCON.jar'
 
 # completion
 complete -cf sudo
