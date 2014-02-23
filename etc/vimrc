@@ -20,4 +20,7 @@ set autoindent
 set background=dark
 set mouse=a
 set hlsearch
+
 syntax on
+
+source /etc/wordlist.vim
