@@ -34,7 +34,7 @@ case ${TERM} in
 		;;
 esac
 
-use_color=false
+use_color=true
 
 # Set colorful PS1 only on colorful terminals.
 # dircolors --print-database uses its own built-in database
@@ -77,10 +77,7 @@ if ${use_color} ; then
 
 	export EDITOR=/usr/bin/vim
 else
-	if [[ ${EUID} == 0 ]] ; then
-		# when we don't have colors
-		PS1='\u@\h:\w\$ '
-	fi
+	PS1='\u@\h:\w\$ '
 fi
 
 # Try to keep environment pollution down, EPA loves us.
