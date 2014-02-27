@@ -77,7 +77,11 @@ if ${use_color} ; then
 
 	export EDITOR=/usr/bin/vim
 else
-	PS1='\u@\h:\w\$ '
+	if [[ ${EUID} == 0 ]] ; then
+		PS1='\u@\h:\w\# '
+	else
+		PS1='\u@\h:\w\$ '
+	fi
 fi
 
 # Try to keep environment pollution down, EPA loves us.
