@@ -71,6 +71,7 @@ if ${use_color} ; then
 	alias grep="grep --color=auto"
 	alias dmesg="dmesg --color"
 	alias rm="rm --preserve-root"
+	alias nvidia-settings="optirun -b none nvidia-settings -c :8"
 
 	complete -cf optirun
 	complete -cf primusrun
