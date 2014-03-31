@@ -1,0 +1,22 @@
+URxvt.background: black
+URxvt.foreground: white
+
+URxvt.transparent: true
+URxvt.shading: 20
+
+URxvt.scrollBar: false
+
+URxvt.font: 9x15
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
+
+URxvt.font: xft:Monospace:pixelsize=12
+URxvt.boldfont: xft:Monospace-Bold:puxelsize=12
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
