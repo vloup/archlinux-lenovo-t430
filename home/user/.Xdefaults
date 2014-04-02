@@ -15,7 +15,7 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 
 URxvt.font: xft:Monospace:pixelsize=12
-URxvt.boldfont: xft:Monospace-Bold:puxelsize=12
+URxvt.boldfont: xft:Monospace-Bold:pixelsize=12
 
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/firefox
