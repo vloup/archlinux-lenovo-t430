@@ -1,3 +1,5 @@
+URxvt*termName: rxvt
+
 URxvt.background: black
 URxvt.foreground: white
 
