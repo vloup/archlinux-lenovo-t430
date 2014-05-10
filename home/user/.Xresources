@@ -6,7 +6,10 @@ URxvt.foreground: white
 URxvt.transparent: true
 URxvt.shading: 20
 
-URxvt.scrollBar: false
+! URxvt.scrollBar: false
+URxvt.scrollBar_right: true
+! Set the style of the scrollbar: rxvt (default), plain, next, xterm
+URxvt.scrollstyle: plain
 
 URxvt.font: 9x15
 
