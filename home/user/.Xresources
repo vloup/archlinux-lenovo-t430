@@ -22,6 +22,9 @@ Xft.hintstyle: hintfull
 URxvt.font: xft:Monospace:pixelsize=12
 URxvt.boldfont: xft:Monospace-Bold:pixelsize=12
 
+URxvt.color4: RoyalBlue
+URxvt.color12: RoyalBlue
+
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
