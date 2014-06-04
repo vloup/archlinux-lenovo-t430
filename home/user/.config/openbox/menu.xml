@@ -33,6 +33,15 @@
       </startupnotify>
     </action>
   </item>
+  <item label="Thunderbird">
+    <action name="Execute">
+      <command>thunderbird</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Thunderbird</wmclass>
+      </startupnotify>
+    </action>
+  </item>
   <item label="Steam">
     <action name="Execute">
       <command>steam</command>
