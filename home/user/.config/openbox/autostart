@@ -19,3 +19,4 @@ nitrogen --set-zoom-fill ~/Downloads/images/robitb_wallp_b.png
 #synclient TouchpadOff=1
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
 tint2 &
+conky &
