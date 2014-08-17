@@ -62,6 +62,11 @@
   <menu id="apps-net-menu"/>
   <menu id="apps-term-menu"/>
   <menu id="apps-fileman-menu"/>
+  <item label="Lock Session">
+    <action name="Execute">
+      <command>xscreensaver-command --lock</command>
+    </action>
+  </item>
   <item label="Log Out">
     <action name="Exit">
       <prompt>yes</prompt>
