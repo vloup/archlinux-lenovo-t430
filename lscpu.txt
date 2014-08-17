@@ -1,0 +1,24 @@
+Architecture :        x86_64
+Mode(s) opératoire(s) des processeurs : 32-bit, 64-bit
+Boutisme :            Little Endian
+Processeur(s) :       4
+Liste de processeur(s) en ligne : 0-3
+Thread(s) par cœur : 2
+Cœur(s) par socket : 2
+Socket(s) :           1
+Nœud(s) NUMA :       1
+Identifiant constructeur : GenuineIntel
+Famille de processeur : 6
+Modèle :             58
+Nom de modèle :      Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
+Révision :           9
+Vitesse du processeur en MHz : 1241.109
+Vitesse maximale du processeur en MHz : 3600.0000
+Vitesse minimale du processeur en MHz : 1200.0000
+BogoMIPS :            5788.58
+Virtualisation :      VT-x
+Cache L1d :           32K
+Cache L1i :           32K
+Cache L2 :            256K
+Cache L3 :            4096K
+Nœud NUMA 0 de processeur(s) : 0-3

@@ -1,0 +1,94 @@
+
+/dev/sda:
+
+ATA device, with non-removable media
+	Model Number:       HITACHI HTS725050A7E630                 
+	Serial Number:      TF1500Y9GM93TB
+	Firmware Revision:  GH2ZB390
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6; Revision: ATA8-AST T13 Project D1697 Revision 0b
+Standards:
+	Used: unknown (minor revision code 0x0028) 
+	Supported: 8 7 6 5 
+	Likely used: 8
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		16	16
+	sectors/track	63	63
+	--
+	CHS current addressable sectors:   16514064
+	LBA    user addressable sectors:  268435455
+	LBA48  user addressable sectors:  976773168
+	Logical  Sector size:                   512 bytes
+	Physical Sector size:                  4096 bytes
+	Logical Sector-0 offset:                  0 bytes
+	device size with M = 1024*1024:      476940 MBytes
+	device size with M = 1000*1000:      500107 MBytes (500 GB)
+	cache/buffer size  = unknown
+	Form Factor: 2.5 inch
+	Nominal Media Rotation Rate: 7200
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, no device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Advanced power management level: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	DOWNLOAD_MICROCODE
+	   *	Advanced Power Management feature set
+	    	SET_MAX security extension
+	   *	48-bit Address feature set
+	   *	Device Configuration Overlay feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
+	   *	64-bit World wide name
+	   *	IDLE_IMMEDIATE with UNLOAD
+	   *	WRITE_UNCORRECTABLE_EXT command
+	   *	{READ,WRITE}_DMA_EXT_GPL commands
+	   *	Segmented DOWNLOAD_MICROCODE
+	   *	Gen1 signaling speed (1.5Gb/s)
+	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Host-initiated interface power management
+	   *	Phy event counters
+	   *	Idle-Unload when NCQ is active
+	   *	NCQ priority information
+	   *	DMA Setup Auto-Activate optimization
+	    	Device-initiated interface power management
+	   *	Software settings preservation
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Write Same (AC2)
+	   *	SCT Error Recovery Control (AC3)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+	not	frozen
+	not	expired: security count
+		supported: enhanced erase
+	88min for SECURITY ERASE UNIT. 90min for ENHANCED SECURITY ERASE UNIT. 
+Logical Unit WWN Device Identifier: 5000cca662c8c54b
+	NAA		: 5
+	IEEE OUI	: 000cca
+	Unique ID	: 662c8c54b
+Checksum: correct
