@@ -27,7 +27,7 @@
 #aa_ER@saaho UTF-8  
 #aa_ET UTF-8  
 #af_ZA.UTF-8 UTF-8  
-#af_ZA ISO-8859-1 
+#af_ZA ISO-8859-1  
 #ak_GH UTF-8  
 #am_ET UTF-8  
 #an_ES.UTF-8 UTF-8  
@@ -312,7 +312,7 @@ fr_CH.UTF-8 UTF-8
 #lt_LT.UTF-8 UTF-8  
 #lt_LT ISO-8859-13  
 #lv_LV.UTF-8 UTF-8  
-#lv_LV ISO-8859-13 
+#lv_LV ISO-8859-13  
 #lzh_TW UTF-8  
 #mag_IN UTF-8  
 #mai_IN UTF-8  
@@ -425,7 +425,7 @@ fr_CH.UTF-8 UTF-8
 #tg_TJ.UTF-8 UTF-8  
 #tg_TJ KOI8-T  
 #th_TH.UTF-8 UTF-8  
-#th_TH TIS-620 
+#th_TH TIS-620  
 #the_NP UTF-8  
 #ti_ER UTF-8  
 #ti_ET UTF-8  
@@ -447,6 +447,7 @@ fr_CH.UTF-8 UTF-8
 #unm_US UTF-8  
 #ur_IN UTF-8  
 #ur_PK UTF-8  
+#uz_UZ.UTF-8 UTF-8  
 #uz_UZ ISO-8859-1  
 #uz_UZ@cyrillic UTF-8  
 #ve_ZA UTF-8  
