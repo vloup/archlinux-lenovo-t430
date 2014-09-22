@@ -2,35 +2,35 @@
 /dev/sda:
 
 ATA device, with non-removable media
-	Model Number:       HITACHI HTS725050A7E630                 
-	Serial Number:      TF1500Y9GM93TB
-	Firmware Revision:  GH2ZB390
-	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6; Revision: ATA8-AST T13 Project D1697 Revision 0b
+	Model Number:       Crucial_CT512MX100SSD1                  
+	Serial Number:      14330CEF1CD1
+	Firmware Revision:  MU01    
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
 Standards:
 	Used: unknown (minor revision code 0x0028) 
-	Supported: 8 7 6 5 
-	Likely used: 8
+	Supported: 9 8 7 6 5 
+	Likely used: 9
 Configuration:
 	Logical		max	current
-	cylinders	16383	16383
-	heads		16	16
+	cylinders	16383	65535
+	heads		16	1
 	sectors/track	63	63
 	--
-	CHS current addressable sectors:   16514064
+	CHS current addressable sectors:    4128705
 	LBA    user addressable sectors:  268435455
-	LBA48  user addressable sectors:  976773168
+	LBA48  user addressable sectors: 1000215216
 	Logical  Sector size:                   512 bytes
 	Physical Sector size:                  4096 bytes
 	Logical Sector-0 offset:                  0 bytes
-	device size with M = 1024*1024:      476940 MBytes
-	device size with M = 1000*1000:      500107 MBytes (500 GB)
+	device size with M = 1024*1024:      488386 MBytes
+	device size with M = 1000*1000:      512110 MBytes (512 GB)
 	cache/buffer size  = unknown
 	Form Factor: 2.5 inch
-	Nominal Media Rotation Rate: 7200
+	Nominal Media Rotation Rate: Solid State Device
 Capabilities:
 	LBA, IORDY(can be disabled)
 	Queue depth: 32
-	Standby timer values: spec'd by Standard, no device specific minimum
+	Standby timer values: spec'd by Standard, with device specific minimum
 	R/W multiple sector transfer: Max = 16	Current = 16
 	Advanced power management level: 254
 	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
@@ -47,6 +47,7 @@ Commands/features:
 	   *	Host Protected Area feature set
 	   *	WRITE_BUFFER command
 	   *	READ_BUFFER command
+	   *	NOP cmd
 	   *	DOWNLOAD_MICROCODE
 	   *	Advanced Power Management feature set
 	    	SET_MAX security extension
@@ -60,24 +61,30 @@ Commands/features:
 	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
 	   *	64-bit World wide name
 	   *	IDLE_IMMEDIATE with UNLOAD
+	    	Write-Read-Verify feature set
 	   *	WRITE_UNCORRECTABLE_EXT command
 	   *	{READ,WRITE}_DMA_EXT_GPL commands
 	   *	Segmented DOWNLOAD_MICROCODE
 	   *	Gen1 signaling speed (1.5Gb/s)
 	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Gen3 signaling speed (6.0Gb/s)
 	   *	Native Command Queueing (NCQ)
-	   *	Host-initiated interface power management
 	   *	Phy event counters
-	   *	Idle-Unload when NCQ is active
 	   *	NCQ priority information
+	   *	unknown 76[15]
 	   *	DMA Setup Auto-Activate optimization
 	    	Device-initiated interface power management
+	    	Asynchronous notification (eg. media change)
 	   *	Software settings preservation
+	    	unknown 78[8]
 	   *	SMART Command Transport (SCT) feature set
 	   *	SCT Write Same (AC2)
-	   *	SCT Error Recovery Control (AC3)
 	   *	SCT Features Control (AC4)
 	   *	SCT Data Tables (AC5)
+	   *	reserved 69[4]
+	   *	reserved 69[7]
+	   *	Data Set Management TRIM supported (limit 8 blocks)
+	   *	Deterministic read ZEROs after TRIM
 Security: 
 	Master password revision code = 65534
 		supported
@@ -86,9 +93,9 @@ Security:
 	not	frozen
 	not	expired: security count
 		supported: enhanced erase
-	88min for SECURITY ERASE UNIT. 90min for ENHANCED SECURITY ERASE UNIT. 
-Logical Unit WWN Device Identifier: 5000cca662c8c54b
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT. 
+Logical Unit WWN Device Identifier: 500a07510cef1cd1
 	NAA		: 5
-	IEEE OUI	: 000cca
-	Unique ID	: 662c8c54b
+	IEEE OUI	: 00a075
+	Unique ID	: 10cef1cd1
 Checksum: correct

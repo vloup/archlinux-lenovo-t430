@@ -15,9 +15,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# PATH config
-export PATH="/usr/lib/ccache/bin/:$PATH"
-
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
 # it regains control.  #65623
@@ -26,6 +23,9 @@ shopt -s checkwinsize
 
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
+
+# auto change directory
+shopt -s autocd
 
 # Change the window title of X terminals 
 case ${TERM} in

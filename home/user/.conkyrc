@@ -64,10 +64,9 @@ ${color grey}Frequency (in GHz):$color $freq_g
 ${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
 ${color grey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
 ${color grey}CPU Usage:$color $cpu% ${cpubar 4}
+${color grey}CPU Temp:$color ${acpitemp}°C  ${color grey}Fan Speed:$color $ibm_fan
+${color grey}Battery:$color $battery_percent% ${battery_bar 4}
 ${color grey}Processes:$color $processes  ${color grey}Running:$color $running_processes
-$hr
-${color grey}Networking:
-Up:$color ${upspeed eth0} ${color grey} - Down:$color ${downspeed eth0}
 $hr
 ${color grey}Name              PID   CPU%   MEM%
 ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}

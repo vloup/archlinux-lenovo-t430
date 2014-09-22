@@ -159,7 +159,7 @@ for_window [class="xfce4-notifyd" instance="xfce4-notifyd"] floating enable
 for_window [class="xfce4-notifyd" instance="xfce4-notifyd"] border none
 for_window [class="Orage" instance="orage"] floating enable
 
-exec nitrogen --set-zoom-fill ~/Downloads/images/wallp.png
+exec nitrogen --set-zoom-fill ~/.i3/wallp.png
 #exec synclient TouchpadOff=1
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
 
