@@ -19,8 +19,8 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 # Important:
 # - You *must* disable your distribution's governor settings or conflicts will occur
 # - ondemand is sufficient for *almost all* workloads, you should know what you're doing!
-#CPU_SCALING_GOVERNOR_ON_AC=ondemand
-#CPU_SCALING_GOVERNOR_ON_BAT=ondemand
+CPU_SCALING_GOVERNOR_ON_AC=ondemand
+CPU_SCALING_GOVERNOR_ON_BAT=ondemand
 
 # Set the min/max frequency available for the scaling governor.
 # Possible values strongly depend on your cpu. For available frequencies see
@@ -37,8 +37,8 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 # Important:
 # - This may conflict with your distribution's governor settings
 # - A value of 1 does *not* activate boosting, it just allows it
-#CPU_BOOST_ON_AC=1
-#CPU_BOOST_ON_BAT=0
+CPU_BOOST_ON_AC=1
+CPU_BOOST_ON_BAT=0
 
 # Minimize number of used cpu cores/hyper-threads under light load conditions
 SCHED_POWERSAVE_ON_AC=0
@@ -55,13 +55,13 @@ NMI_WATCHDOG=0
 
 # Hard disk devices, separate multiple devices with spaces (default: sda).
 # Devices can be specified by disk id too (lookup with: tlp diskid).
-DISK_DEVICES="sda sdb"
+DISK_DEVICES="sda"
 
 # Hard disk advanced power management level: 1(max saving)..254(off)
 # Levels 1..127 may spin down the disk.
 # Separate values for multiple devices with spaces.
-DISK_APM_LEVEL_ON_AC="254 254"
-DISK_APM_LEVEL_ON_BAT="128 128"
+#DISK_APM_LEVEL_ON_AC="254 254"
+#DISK_APM_LEVEL_ON_BAT="254 254"
 
 # Hard disk spin down timeout:
 # 0:        spin down disabled
@@ -141,7 +141,6 @@ RUNTIME_PM_ALL=0
 #RUNTIME_PM_BLACKLIST="bb:dd.f 11:22.3 44:55.6"
 
 # Set to 0 to disable/1 to enable usb autosuspend feature
-#USB_AUTOSUSPEND=1
 USB_AUTOSUSPEND=0
 
 # Devices from the following list are excluded from usb autosuspend
@@ -162,7 +161,7 @@ USB_BLACKLIST_WWAN=1
 # on system startup: 0=disable/1=enable
 # Hint: the parameters DEVICES_TO_DISABLE/ENABLE_ON_STARTUP/SHUTDOWN below
 #       are ignored when this is enabled!
-RESTORE_DEVICE_STATE_ON_STARTUP=0
+RESTORE_DEVICE_STATE_ON_STARTUP=1
 
 # Radio devices to disable on startup: bluetooth wifi wwan
 #DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"
