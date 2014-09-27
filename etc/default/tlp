@@ -55,13 +55,13 @@ NMI_WATCHDOG=0
 
 # Hard disk devices, separate multiple devices with spaces (default: sda).
 # Devices can be specified by disk id too (lookup with: tlp diskid).
-DISK_DEVICES="sda"
+DISK_DEVICES=""
 
 # Hard disk advanced power management level: 1(max saving)..254(off)
 # Levels 1..127 may spin down the disk.
 # Separate values for multiple devices with spaces.
-#DISK_APM_LEVEL_ON_AC="254 254"
-#DISK_APM_LEVEL_ON_BAT="254 254"
+DISK_APM_LEVEL_ON_AC="254 254"
+DISK_APM_LEVEL_ON_BAT="254 254"
 
 # Hard disk spin down timeout:
 # 0:        spin down disabled
@@ -161,7 +161,7 @@ USB_BLACKLIST_WWAN=1
 # on system startup: 0=disable/1=enable
 # Hint: the parameters DEVICES_TO_DISABLE/ENABLE_ON_STARTUP/SHUTDOWN below
 #       are ignored when this is enabled!
-RESTORE_DEVICE_STATE_ON_STARTUP=1
+RESTORE_DEVICE_STATE_ON_STARTUP=0
 
 # Radio devices to disable on startup: bluetooth wifi wwan
 #DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"
