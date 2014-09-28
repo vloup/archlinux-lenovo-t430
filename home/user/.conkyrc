@@ -27,7 +27,7 @@ Fan Speed${alignr}$ibm_fan rpm
 ${color lightgrey}${cpugraph cpu}${color grey}
 
 ${font sans serif:bold:size=8}${color}MEMORY${hr 2}${color grey}
-${font sans serif:size=8}Ram${alignr}$mem/$memmax
+${font sans serif:size=10}Ram${alignr}$mem/$memmax
 $memperc% ${color lightgrey}${membar 4}${color grey}
 Swap${alignr}$swap/$swapmax
 $swapperc% ${color lightgrey}${swapbar 4}${color grey}
