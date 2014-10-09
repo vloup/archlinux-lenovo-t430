@@ -57,9 +57,23 @@
   </item>
 </menu>
 
+<menu id="app-devel-menu" label="Development">
+  <item label="IntelliJ Idea">
+    <action name="Execute">
+      <command>/usr/share/intellijidea-ce/bin/idea.sh</command>
+    </action>
+  </item>
+  <item label="Android Eclipse">
+    <action name="Execute">
+      <command>/home/vincent/applications/adt-bundle-linux-x86_64-20140702/eclipse/eclipse</command>
+    </action>
+  </item>
+</menu>
+
 <menu id="root-menu" label="Openbox 3">
   <separator label="Applications" />
   <menu id="apps-net-menu"/>
+  <menu id="app-devel-menu"/>
   <menu id="apps-term-menu"/>
   <menu id="apps-fileman-menu"/>
   <item label="Lock Session">
