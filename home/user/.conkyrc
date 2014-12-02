@@ -34,7 +34,7 @@ $swapperc% ${color lightgrey}${swapbar 4}${color grey}
 ${color lightgrey}${memgraph mem}${color grey}
 
 ${font sans serif:bold:size=8}${color}PROCESSES ${hr 2}${color grey}
-${font sans serif:size=10}${color lightgrey}Name${goto 120}PID${goto 170}CPU${goto 220}MEM${color grey}
+${font sans serif:size=10}${color lightgrey}Name${goto 120}PID${goto 170}CPU%${goto 220}MEM%${color grey}
 ${top name 1}${goto 120}${top pid 1}${goto 170}${top cpu 1}${goto 220}${top mem 1}
 ${top name 2}${goto 120}${top pid 2}${goto 170}${top cpu 2}${goto 220}${top mem 2}
 ${top name 3}${goto 120}${top pid 3}${goto 170}${top cpu 3}${goto 220}${top mem 3}
