@@ -16,10 +16,11 @@ MAX_LOST_WORK_SECS_ON_AC=15
 MAX_LOST_WORK_SECS_ON_BAT=60
 
 # Select a cpu frequency scaling governor: ondemand/powersave/performance/conservative
+# Intel Core i processor with intel_pstate driver: powersave/performance 
 # Important:
 # - You *must* disable your distribution's governor settings or conflicts will occur
 # - ondemand is sufficient for *almost all* workloads, you should know what you're doing!
-CPU_SCALING_GOVERNOR_ON_AC=ondemand
+CPU_SCALING_GOVERNOR_ON_AC=performance
 CPU_SCALING_GOVERNOR_ON_BAT=ondemand
 
 # Set the min/max frequency available for the scaling governor.
@@ -37,8 +38,8 @@ CPU_SCALING_GOVERNOR_ON_BAT=ondemand
 # Important:
 # - This may conflict with your distribution's governor settings
 # - A value of 1 does *not* activate boosting, it just allows it
-CPU_BOOST_ON_AC=1
-CPU_BOOST_ON_BAT=0
+#CPU_BOOST_ON_AC=1
+#CPU_BOOST_ON_BAT=0
 
 # Minimize number of used cpu cores/hyper-threads under light load conditions
 SCHED_POWERSAVE_ON_AC=0
@@ -61,7 +62,7 @@ DISK_DEVICES=""
 # Levels 1..127 may spin down the disk.
 # Separate values for multiple devices with spaces.
 DISK_APM_LEVEL_ON_AC="254 254"
-DISK_APM_LEVEL_ON_BAT="254 254"
+DISK_APM_LEVEL_ON_BAT="128 128"
 
 # Hard disk spin down timeout:
 # 0:        spin down disabled
@@ -82,7 +83,6 @@ SATA_LINKPWR_ON_BAT=min_power
 
 # PCI Express Active State Power Management (PCIe ASPM):
 # default/performance/powersave
-# Hint: needs kernel boot option pcie_aspm=force on some machines
 PCIE_ASPM_ON_AC=performance
 PCIE_ASPM_ON_BAT=powersave
 
@@ -117,11 +117,11 @@ SOUND_POWER_SAVE_ON_BAT=1
 # Disable controller too (HDA only): Y/N
 SOUND_POWER_SAVE_CONTROLLER=Y
 
-# Set to 1 to power off optical drive in UltraBay (ThinkPads only)
-# when running on battery. A value of 0 disables this Feature (Default).
+# Set to 1 to power off optical drive in UltraBay/MediaBay when running
+# on battery. A value of 0 disables this Feature (Default).
 # Drive can be powered on again by releasing (and reinserting) the
 # eject lever or by pressing the disc eject button on newer models.
-# Note: an UltraBay hard disk is never powered off.
+# Note: an UltraBay/MediaBay hard disk is never powered off.
 BAY_POWEROFF_ON_BAT=0
 # Optical drive device to power off (default sr0)
 BAY_DEVICE="sr0"
@@ -131,10 +131,9 @@ BAY_DEVICE="sr0"
 RUNTIME_PM_ON_AC=on
 RUNTIME_PM_ON_BAT=auto
 
-# Runtime PM for *all* pci(e) bus devices, expect backlisted ones:
+# Runtime PM for *all* pci(e) bus devices, except blacklisted ones:
 # 0=disable / 1=enable
-# Warning: experimental option, could cause system instabilities
-RUNTIME_PM_ALL=0
+RUNTIME_PM_ALL=1
 
 # Exclude pci(e) device adresses the following list from Runtime PM
 # (separate with spaces). Use lspci to get the adresses (1st column).
@@ -177,10 +176,6 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 # (to prevent other operating systems from missing radios)
 #DEVICES_TO_ENABLE_ON_SHUTDOWN="wwan"
 
-# Radio devices to enable when wireless radio switch is turned on:
-# bluetooth wifi wwan (Ubuntu + ThinkPad only)
-#DEVICES_TO_ENABLE_ON_RADIOSW="wifi wwan"
-
 # Battery charge thresholds (ThinkPad only, tp-smapi or acpi-call kernel module required)
 # Charging starts when the remaining capacity falls below the START_CHARGE_TRESH
 # value and stops when exceeding the STOP_CHARGE_TRESH value.
@@ -190,10 +185,6 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 # Ultrabay or slice battery (values in %)
 #START_CHARGE_THRESH_BAT1=75
 #STOP_CHARGE_THRESH_BAT1=80
-
-# Set to 1 to disable use of tpacpi-bat on Sandy Bridge or newer Thinkpads
-# and force usage of tp-smapi instead
-#DISABLE_TPACPIBAT=1
 
 # ------------------------------------------------------------------------------
 # tlp-rdw - Parameters for the radio device wizard
