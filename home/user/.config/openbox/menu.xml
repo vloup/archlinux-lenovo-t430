@@ -63,11 +63,6 @@
       <command>/usr/share/intellijidea-ce/bin/idea.sh</command>
     </action>
   </item>
-  <item label="Android Eclipse">
-    <action name="Execute">
-      <command>/home/vincent/applications/adt-bundle-linux-x86_64-20140702/eclipse/eclipse</command>
-    </action>
-  </item>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
