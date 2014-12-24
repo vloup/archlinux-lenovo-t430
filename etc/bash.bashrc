@@ -75,6 +75,8 @@ if ${use_color} ; then
 	alias dmesg="dmesg --color"
 	alias rm="rm --preserve-root"
 	alias nvidia-settings="optirun -b none nvidia-settings -c :8"
+	alias :q="exit"
+	alias cd..="cd .."
 
 	complete -cf optirun
 	complete -cf primusrun
