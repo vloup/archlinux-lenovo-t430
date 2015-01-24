@@ -73,15 +73,6 @@ if ${use_color} ; then
 	alias dir="dir --color=auto"
 	alias grep="grep --color=auto"
 	alias dmesg="dmesg --color"
-	alias rm="rm --preserve-root"
-	alias nvidia-settings="optirun -b none nvidia-settings -c :8"
-	alias :q="exit"
-	alias cd..="cd .."
-
-	complete -cf optirun
-	complete -cf primusrun
-
-	export EDITOR=/usr/bin/vim
 else
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\u@\h:\w\# '
@@ -99,3 +90,14 @@ unset use_color safe_term match_lhs
 # Try to enable the "Command not found" hook ("pacman -S pkgfile" to install it).
 # See also: https://wiki.archlinux.org/index.php/Bash#The_.22command_not_found.22_hook
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
+
+alias rm="rm --preserve-root"
+alias nvidia-settings="optirun -b none nvidia-settings -c :8"
+alias :q="exit"
+alias cd..="cd .."
+
+complete -cf optirun
+complete -cf primusrun
+complete -cf sudo
+
+export EDITOR=/usr/bin/vim
