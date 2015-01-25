@@ -42,6 +42,11 @@
       </startupnotify>
     </action>
   </item>
+  <item label="FileZilla">
+    <action name="Execute">
+      <command>filezilla</command>
+    </action>
+  </item>
   <item label="Steam">
     <action name="Execute">
       <command>steam</command>
