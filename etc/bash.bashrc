@@ -1,5 +1,4 @@
 # /etc/bash/bashrc
-#
 # This file is sourced by all *interactive* bash shells on startup,
 # including some apparently interactive shells such as scp and rcp
 # that can't tolerate any output.  So make sure this doesn't display
@@ -64,9 +63,9 @@ if ${use_color} ; then
 	fi
 
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+		PS1='\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 " \[\033[01;33m\]%s")\[\033[00m\]\$ '
 	else
-		PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+		PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 " \[\033[01;33m\]%s")\[\033[00m\]\$ '
 	fi
 
 	alias ls="ls --color=auto"
@@ -75,9 +74,9 @@ if ${use_color} ; then
 	alias dmesg="dmesg --color"
 else
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='\u@\h:\w\# '
+		PS1='\u@\h:\w$(__git_ps1 " %s")\$ '
 	else
-		PS1='\u@\h:\w\$ '
+		PS1='\u@\h:\w$(__git_ps1 " %s")\$ '
 	fi
 fi
 
@@ -90,6 +89,9 @@ unset use_color safe_term match_lhs
 # Try to enable the "Command not found" hook ("pacman -S pkgfile" to install it).
 # See also: https://wiki.archlinux.org/index.php/Bash#The_.22command_not_found.22_hook
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
+
+# Try to enable git-prompt
+[ -r /usr/share/git/completion/git-prompt.sh ] && . /usr/share/git/completion/git-prompt.sh
 
 alias rm="rm --preserve-root"
 alias nvidia-settings="optirun -b none nvidia-settings -c :8"
