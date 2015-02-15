@@ -1,6 +1,6 @@
 ##
 ## ArchAssault repository mirrorlist
-## Generated on 2015-01-14
+## Generated on 2015-02-14
 ##
 
 ## Australia
@@ -43,8 +43,8 @@
 #Server = http://mirror.lagoon.nc/pub/archassault/$repo/os/$arch
 
 ## Norway
-#Server = http://archassault-mirror.greyhat.no/$repo/os/$arch
-#Server = https://archassault-mirror.greyhat.no/$repo/os/$arch
+Server = http://archassault-mirror.greyhat.no/$repo/os/$arch
+Server = https://archassault-mirror.greyhat.no/$repo/os/$arch
 
 ## Russian Federation
 #Server = ftp://mirror.mephi.ru/archassault/$repo/os/$arch
@@ -69,9 +69,9 @@ Server = ftp://ftp.mirrorservice.org/sites/repo.archassault.org/archassault/$rep
 Server = http://www.mirrorservice.org/sites/repo.archassault.org/archassault/$repo/os/$arch
 
 ## United States
-Server = https://repo.archassault.org/archassault/$repo/os/$arch
 Server = ftp://psg.mtu.edu/archassault/$repo/os/$arch
 Server = http://psg.mtu.edu/pub/archassault/$repo/os/$arch
+#Server = http://aam.warheads.net/archassault/$repo/os/$arch
 Server = ftp://mirror.jmu.edu/pub/archassault/$repo/os/$arch
 Server = http://mirror.jmu.edu/pub/archassault/$repo/os/$arch
 #Server = ftp://mirror.keystealth.org/archassault/$repo/os/$arch
@@ -82,8 +82,8 @@ Server = http://mirror.jmu.edu/pub/archassault/$repo/os/$arch
 #Server = ftp://mirror.team-cymru.org/archassault/$repo/os/$arch
 #Server = http://mirror.team-cymru.org/archassault/$repo/os/$arch
 Server = http://mirror.umd.edu/archassault/$repo/os/$arch
-#Server = ftp://mirrors.arsc.edu/archassault/$repo/os/$arch
-#Server = http://mirrors.arsc.edu/archassault/$repo/os/$arch
+Server = ftp://mirrors.arsc.edu/archassault/$repo/os/$arch
+Server = http://mirrors.arsc.edu/archassault/$repo/os/$arch
 #Server = ftp://noodle.portalus.net/ArchAssault/$repo/os/$arch
 #Server = https://noodle.portalus.net/ArchAssault/$repo/os/$arch
 #Server = ftp://mirrors.syringanetworks.net/archassault/$repo/os/$arch
