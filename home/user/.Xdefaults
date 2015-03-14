@@ -25,6 +25,11 @@ URxvt.boldfont: xft:Monospace-Bold:pixelsize=12
 URxvt.color4: RoyalBlue
 URxvt.color12: RoyalBlue
 
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,tabbed
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbed-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
