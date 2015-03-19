@@ -112,7 +112,7 @@ UsePrivilegeSeparation sandbox		# Default for new installations.
 #Compression delayed
 #ClientAliveInterval 0
 #ClientAliveCountMax 3
-#UseDNS yes
+#UseDNS no
 #PidFile /run/sshd.pid
 #MaxStartups 10:30:100
 #PermitTunnel no
