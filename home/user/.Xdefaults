@@ -27,7 +27,7 @@ URxvt.color12: RoyalBlue
 
 URxvt.perl-ext-common: default,matcher,tabbed
 URxvt.tabbed.tabbar-fg: 2
-URxvt.tabbed.tabbed-bg: 0
+URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 3
 URxvt.tabbed.tab-bg: 0
 
