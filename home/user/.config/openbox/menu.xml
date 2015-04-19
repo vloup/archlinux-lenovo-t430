@@ -68,6 +68,21 @@
       <command>/usr/share/intellijidea-ce/bin/idea.sh</command>
     </action>
   </item>
+  <item label="QtCreator">
+    <action name="Execute">
+      <command>qtcreator</command>
+    </action>
+  </item>
+  <item label="Geany">
+    <action name="Execute">
+      <command>geany</command>
+    </action>
+  </item>
+  <item label="Texmaker">
+    <action name="Execute">
+      <command>texmaker</command>
+    </action>
+  </item>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
