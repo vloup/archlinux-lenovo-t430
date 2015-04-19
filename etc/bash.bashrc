@@ -112,3 +112,6 @@ complete -cf sudo
 
 # editor
 export EDITOR=/usr/bin/vim
+
+# history size
+export HISTSIZE=2000
