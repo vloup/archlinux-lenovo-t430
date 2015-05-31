@@ -1,12 +1,13 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2015-05-19
+## Generated on 2015-05-31
 ##
 
 ## Switzerland
 Server = http://archlinux.puzzle.ch/$repo/os/$arch
 
 ## Worldwide
+#Server = https://dgix.ru/mirrors/archlinux/$repo/os/$arch
 #Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
 
 ## Australia
@@ -16,7 +17,7 @@ Server = http://archlinux.puzzle.ch/$repo/os/$arch
 #Server = http://mirror.internode.on.net/pub/archlinux/$repo/os/$arch
 #Server = http://mirror.rackcentral.com.au/archlinux/$repo/os/$arch
 #Server = http://ftp.swin.edu.au/archlinux/$repo/os/$arch
-#Server = http://archlinux.mirror.uber.com.au/$repo/os/$arch
+#Server = http://archlinux.uberglobalmirror.com/$repo/os/$arch
 
 ## Austria
 #Server = http://mirror.easyname.at/archlinux/$repo/os/$arch
@@ -37,6 +38,7 @@ Server = http://archlinux.puzzle.ch/$repo/os/$arch
 #Server = http://archlinux-br.mirror.host1plus.com/$repo/os/$arch
 #Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
 #Server = http://www.las.ic.unicamp.br/pub/archlinux/$repo/os/$arch
+#Server = http://linorg.usp.br/archlinux/$repo/os/$arch
 #Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch
 
 ## Bulgaria
@@ -252,6 +254,7 @@ Server = http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch
 #Server = http://archlinux.mirrors.linux.ro/$repo/os/$arch
 
 ## Russia
+#Server = http://dgix.ru/mirrors/archlinux/$repo/os/$arch
 #Server = http://mirror.rol.ru/archlinux/$repo/os/$arch
 #Server = http://mirror.yandex.ru/archlinux/$repo/os/$arch
 
@@ -278,10 +281,12 @@ Server = http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch
 #Server = http://sunsite.rediris.es/mirror/archlinux/$repo/os/$arch
 
 ## Sweden
+#Server = http://ftp.acc.umu.se/mirror/archlinux/$repo/os/$arch
 #Server = http://ftp.df.lth.se/pub/archlinux/$repo/os/$arch
 #Server = http://ftp.lysator.liu.se/pub/archlinux/$repo/os/$arch
 #Server = https://ftp.lysator.liu.se/pub/archlinux/$repo/os/$arch
 #Server = http://ftp.myrveln.se/pub/linux/archlinux/$repo/os/$arch
+#Server = https://ftp.myrveln.se/pub/linux/archlinux/$repo/os/$arch
 #Server = http://ftp.portlane.com/pub/os/linux/archlinux/$repo/os/$arch
 
 ## Switzerland
@@ -338,6 +343,8 @@ Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
 #Server = https://lug.mtu.edu/archlinux/$repo/os/$arch
 #Server = http://mirror.metrocast.net/archlinux/$repo/os/$arch
 #Server = http://mirror.nexcess.net/archlinux/$repo/os/$arch
+#Server = http://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+#Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
 #Server = http://ftp.osuosl.org/pub/archlinux/$repo/os/$arch
 #Server = http://archlinux.pallissard.net/archlinux/$repo/os/$arch
 #Server = http://mirror.redsox.cc/pub/archlinux/$repo/os/$arch
