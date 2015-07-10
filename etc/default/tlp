@@ -27,8 +27,8 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 #   You *must* disable your distribution's governor settings or conflicts will
 #   occur. ondemand is sufficient for *almost all* workloads, you should know
 #   what you're doing!
-#CPU_SCALING_GOVERNOR_ON_AC=ondemand
-#CPU_SCALING_GOVERNOR_ON_BAT=ondemand
+CPU_SCALING_GOVERNOR_ON_AC=ondemand
+CPU_SCALING_GOVERNOR_ON_BAT=ondemand
 
 # Set the min/max frequency available for the scaling governor.
 # Possible values strongly depend on your CPU. For available frequencies see
@@ -52,8 +52,8 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 # Important:
 # - This may conflict with your distribution's governor settings
 # - A value of 1 does *not* activate boosting, it just allows it
-#CPU_BOOST_ON_AC=1
-#CPU_BOOST_ON_BAT=0
+CPU_BOOST_ON_AC=1
+CPU_BOOST_ON_BAT=0
 
 # Minimize number of used CPU cores/hyper-threads under light load conditions
 SCHED_POWERSAVE_ON_AC=0
@@ -198,7 +198,7 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 
 # Radio devices to disable on startup: bluetooth, wifi, wwan.
 # Separate multiple devices with spaces.
-#DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"
+DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wwan"
 
 # Radio devices to enable on startup: bluetooth, wifi, wwan.
 # Separate multiple devices with spaces.
