@@ -100,7 +100,7 @@ DISK_APM_LEVEL_ON_BAT="128 128"
 # SATA aggressive link power management (ALPM):
 #   min_power, medium_power, max_performance
 SATA_LINKPWR_ON_AC=max_performance
-SATA_LINKPWR_ON_BAT=min_power
+SATA_LINKPWR_ON_BAT=medium_power
 
 # PCI Express Active State Power Management (PCIe ASPM):
 #   default, performance, powersave
