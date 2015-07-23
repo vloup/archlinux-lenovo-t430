@@ -74,6 +74,7 @@ PasswordAuthentication no
 
 # Change to no to disable s/key passwords
 ChallengeResponseAuthentication no
+KbdInteractiveAuthentication no
 
 # Kerberos options
 #KerberosAuthentication no
