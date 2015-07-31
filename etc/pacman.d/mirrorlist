@@ -1,6 +1,6 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2015-07-19
+## Generated on 2015-07-31
 ##
 
 ## Switzerland
@@ -43,6 +43,7 @@ Server = http://archlinux.puzzle.ch/$repo/os/$arch
 #Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch
 
 ## Bulgaria
+#Server = http://mirrors.netix.net/archlinux/$repo/os/$arch
 #Server = http://mirror.telepoint.bg/archlinux/$repo/os/$arch
 
 ## Canada
