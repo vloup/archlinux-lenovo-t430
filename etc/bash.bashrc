@@ -95,7 +95,7 @@ unset use_color safe_term match_lhs
 [ -r /usr/share/git/completion/git-prompt.sh ] && . /usr/share/git/completion/git-prompt.sh
 
 # path
-#export PATH="/usr/lib/ccache/bin:$PATH"
+export PATH="/usr/lib/ccache/bin:$PATH"
 
 # aliases
 alias rm="rm --preserve-root"
