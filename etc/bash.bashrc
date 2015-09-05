@@ -115,3 +115,15 @@ export EDITOR=/usr/bin/vim
 
 # history size
 export HISTSIZE=2000
+
+# generate a random 10 char alphanumeric password
+# usage: genpasswd [size]
+genpasswd()
+{
+	local length=10
+	if [ ! -z "$1" ]; then
+		length="$1"
+	fi
+
+	tr -dc "A-Za-z0-9" < /dev/urandom | head -c "$length" | xargs
+}
