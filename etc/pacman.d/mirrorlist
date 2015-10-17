@@ -1,6 +1,6 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2015-10-02
+## Generated on 2015-10-17
 ##
 
 ## Switzerland
@@ -257,6 +257,7 @@ Server = http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch
 
 ## Poland
 #Server = http://arch.midov.pl/arch/$repo/os/$arch
+#Server = http://mirror.onet.pl/pub/mirrors/archlinux/$repo/os/$arch
 #Server = http://piotrkosoft.net/pub/mirrors/ftp.archlinux.org/$repo/os/$arch
 #Server = http://ftp.vectranet.pl/archlinux/$repo/os/$arch
 
