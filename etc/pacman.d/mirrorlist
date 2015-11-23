@@ -1,6 +1,6 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2015-11-15
+## Generated on 2015-11-22
 ##
 
 ## Switzerland
@@ -123,8 +123,6 @@ Server = http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch
 
 ## Germany
 #Server = http://mirror.23media.de/archlinux/$repo/os/$arch
-#Server = http://archlinux.limun.org/$repo/os/$arch
-#Server = https://archlinux.limun.org/$repo/os/$arch
 #Server = http://artfiles.org/archlinux.org/$repo/os/$arch
 #Server = http://mirror5.bastelfreak.org/archlinux/$repo/os/$arch
 #Server = http://archlinux.cyborg-connect.de/$repo/os/$arch
@@ -165,6 +163,7 @@ Server = http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch
 #Server = http://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
 #Server = http://linux.rz.rub.de/archlinux/$repo/os/$arch
 #Server = http://mirror.selfnet.de/archlinux/$repo/os/$arch
+#Server = http://mirror1.shellbot.com/archlinux/$repo/os/$arch
 #Server = http://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/$repo/os/$arch
 #Server = http://ftp.tu-chemnitz.de/pub/linux/archlinux/$repo/os/$arch
 #Server = http://ftp.tuxdroid.org/archlinux/$repo/os/$arch
