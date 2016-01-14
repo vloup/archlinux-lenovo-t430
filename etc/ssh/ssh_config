@@ -48,3 +48,4 @@ Ciphers aes128-ctr,aes192-ctr,aes256-ctr
 #   ProxyCommand ssh -q -W %h:%p gateway.example.com
 #   RekeyLimit 1G 1h
 Compression yes
+UseRoaming no
