@@ -98,7 +98,7 @@ unset use_color safe_term match_lhs
 export PATH="/usr/lib/ccache/bin:$PATH"
 
 # aliases
-alias rm="rm --preserve-root"
+alias rm="rm --preserve-root --one-file-system"
 alias nvidia-settings="optirun -b none nvidia-settings -c :8"
 alias :q="exit"
 alias cd..="cd .."
