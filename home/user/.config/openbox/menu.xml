@@ -8,17 +8,14 @@
       <command>urxvt</command>
     </action>
   </item>
-  <item label="Xfce Terminal">
+  <item label="Xfce Appfinder">
     <action name="Execute">
-      <command>xfce4-terminal</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
+      <command>xfce4-appfinder -c --disable-server</command>
     </action>
   </item>
   <item label="Guake">
     <action name="Execute">
-    	<command>guake</command>
+      <command>guake</command>
     </action>
   </item>
 </menu>
@@ -66,11 +63,6 @@
   <item label="IntelliJ Idea">
     <action name="Execute">
       <command>/usr/share/intellijidea-ce/bin/idea.sh</command>
-    </action>
-  </item>
-  <item label="QtCreator">
-    <action name="Execute">
-      <command>qtcreator</command>
     </action>
   </item>
   <item label="Geany">

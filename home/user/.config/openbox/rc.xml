@@ -320,6 +320,15 @@
         <command>urxvt</command>
       </action>
     </keybind>
+    <keybind key="W-r">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>xfce4-appfinder -c --disable-server</name>
+        </startupnotify>
+        <command>xfce4-appfinder -c --disable-server</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>amixer set Master 5%+ unmute</command>
