@@ -6,7 +6,6 @@
 [[ $- != *i* ]] && return
 
 # aliases
-alias intellijidea-ce='/usr/share/intellijidea-ce/bin/idea.sh'
 alias rcon='java -jar ~/applications/JaRCON/JaRCON.jar'
 
 # design
