@@ -1,6 +1,6 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2016-04-04
+## Generated on 2016-04-10
 ##
 
 ## Switzerland
@@ -10,7 +10,7 @@ Server = http://archlinux.puzzle.ch/$repo/os/$arch
 #Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
 
 ## Australia
-#Server = http://mirror.aarnet.edu.au/pub/archlinux/$repo/os/$arch
+#Server = https://mirror.aarnet.edu.au/pub/archlinux/$repo/os/$arch
 #Server = http://archlinux.mirror.digitalpacific.com.au/$repo/os/$arch
 #Server = http://ftp.iinet.net.au/pub/archlinux/$repo/os/$arch
 #Server = http://mirror.internode.on.net/pub/archlinux/$repo/os/$arch
