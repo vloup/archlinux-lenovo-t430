@@ -20,9 +20,9 @@ nitrogen --set-zoom-fill ~/.config/openbox/robitb_wallp_b.png
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
 xscreensaver -no-splash &
 tint2 &
-conky &
 orage &
 guake &
 volumeicon &
+conky &
 #dropbox &
 owncloud &
