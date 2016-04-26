@@ -19,8 +19,8 @@ Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintfull
 
-URxvt.font: xft:Monospace:pixelsize=12
-URxvt.boldfont: xft:Monospace-Bold:pixelsize=12
+URxvt.font: xft:Monospace:size=10
+URxvt.boldfont: xft:Monospace-Bold:size=10
 
 URxvt.color4: RoyalBlue
 URxvt.color12: RoyalBlue
