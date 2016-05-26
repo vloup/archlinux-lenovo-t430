@@ -170,12 +170,12 @@ RUNTIME_PM_ALL=1
 RUNTIME_PM_DRIVER_BLACKLIST="radeon nouveau"
 
 # Set to 0 to disable, 1 to enable USB autosuspend feature.
-USB_AUTOSUSPEND=0
+USB_AUTOSUSPEND=1
 
 # Exclude listed devices from USB autosuspend (separate with spaces).
 # Use lsusb to get the ids.
 # Note: input devices (usbhid) are excluded automatically (see below)
-#USB_BLACKLIST="1111:2222 3333:4444"
+USB_BLACKLIST="046d:c52b cd12:ef18"
 
 # WWAN devices are excluded from USB autosuspend:
 # 0=do not exclude / 1=exclude
