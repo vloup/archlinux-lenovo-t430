@@ -24,3 +24,5 @@ set hlsearch
 syntax on
 
 source /etc/wordlist.vim
+
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
