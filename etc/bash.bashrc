@@ -109,6 +109,7 @@ alias la="ls -a"
 complete -cf optirun
 complete -cf primusrun
 complete -cf sudo
+complete -cf torify
 
 # editor
 export EDITOR=/usr/bin/vim
