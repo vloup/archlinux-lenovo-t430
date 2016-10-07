@@ -110,15 +110,17 @@ complete -cf optirun
 complete -cf primusrun
 complete -cf sudo
 complete -cf torify
+complete -c which
 
 # editor
 export EDITOR=/usr/bin/vim
 
 # history size
 export HISTSIZE=2000
+export HISTCONTROL=ignoredups
 
 # less colors
-export LESS=-R
+export LESS=-RFX
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
 export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
 export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
