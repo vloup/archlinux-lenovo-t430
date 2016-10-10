@@ -106,9 +106,6 @@ alias ll="ls -l"
 alias la="ls -a"
 
 # completion
-complete -cf optirun
-complete -cf primusrun
-complete -cf sudo
 complete -cf torify
 complete -c which
 
