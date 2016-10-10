@@ -69,10 +69,23 @@ if ${use_color} ; then
 		PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 " \[\033[01;33m\]%s")\[\033[00m\]\$ '
 	fi
 
-	alias ls="ls --color=auto"
+	# less colors
+	export LESS=-RFX
+	export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
+	export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
+	export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
+	export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
+	export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
+	export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
+	export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+
+	alias diff="diff --color=auto"
 	alias dir="dir --color=auto"
-	alias grep="grep --color=auto"
 	alias dmesg="dmesg --color"
+	alias grep="grep --color=auto"
+	alias egrep="egrep --color=auto"
+	alias fgrep="fgrep --color=auto"
+	alias ls="ls --color=auto"
 else
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\u@\h:\w$(__git_ps1 " %s")\$ '
@@ -107,7 +120,6 @@ alias la="ls -a"
 
 # completion
 complete -cf torify
-complete -c which
 
 # editor
 export EDITOR=/usr/bin/vim
@@ -115,16 +127,6 @@ export EDITOR=/usr/bin/vim
 # history size
 export HISTSIZE=2000
 export HISTCONTROL=ignoredups
-
-# less colors
-export LESS=-RFX
-export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
-export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
-export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
-export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
-export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
-export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
-export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # generate a random 10 char alphanumeric password
 # usage: genpasswd [size]
