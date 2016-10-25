@@ -13,4 +13,5 @@ WantedBy=multi-user.target
 Type=simple
 NonBlocking=true
 ExecStart=/usr/bin/dnscrypt-proxy \
+	  --ephemeral-keys \
 	  -R cs-ch
