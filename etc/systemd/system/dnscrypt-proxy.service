@@ -14,4 +14,4 @@ Type=simple
 NonBlocking=true
 ExecStart=/usr/bin/dnscrypt-proxy \
 	  --ephemeral-keys \
-	  -R cs-ch
+	  -R ns0.dnscrypt.is
