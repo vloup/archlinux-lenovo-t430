@@ -16,9 +16,9 @@ Configuration:
 	heads		16	1
 	sectors/track	63	63
 	--
-	CHS current addressable sectors:    4128705
-	LBA    user addressable sectors:  268435455
-	LBA48  user addressable sectors: 1000215216
+	CHS current addressable sectors:     4128705
+	LBA    user addressable sectors:   268435455
+	LBA48  user addressable sectors:  1000215216
 	Logical  Sector size:                   512 bytes
 	Physical Sector size:                  4096 bytes
 	Logical Sector-0 offset:                  0 bytes
@@ -71,16 +71,19 @@ Commands/features:
 	   *	Native Command Queueing (NCQ)
 	   *	Phy event counters
 	   *	NCQ priority information
-	   *	unknown 76[15]
+	   *	READ_LOG_DMA_EXT equivalent to READ_LOG_EXT
 	   *	DMA Setup Auto-Activate optimization
 	    	Device-initiated interface power management
 	    	Asynchronous notification (eg. media change)
 	   *	Software settings preservation
-	    	unknown 78[8]
+	    	Device Sleep (DEVSLP)
 	   *	SMART Command Transport (SCT) feature set
 	   *	SCT Write Same (AC2)
 	   *	SCT Features Control (AC4)
 	   *	SCT Data Tables (AC5)
+	   *	SANITIZE feature set
+	   *	CRYPTO_SCRAMBLE_EXT command
+	   *	BLOCK_ERASE_EXT command
 	   *	reserved 69[4]
 	   *	reserved 69[7]
 	   *	Data Set Management TRIM supported (limit 8 blocks)
@@ -90,12 +93,15 @@ Security:
 		supported
 	not	enabled
 	not	locked
-	not	frozen
+		frozen
 	not	expired: security count
 		supported: enhanced erase
-	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT. 
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT.
 Logical Unit WWN Device Identifier: 500a07510cef1cd1
 	NAA		: 5
 	IEEE OUI	: 00a075
 	Unique ID	: 10cef1cd1
+Device Sleep:
+	DEVSLP Exit Timeout (DETO): 50 ms (drive)
+	Minimum DEVSLP Assertion Time (MDAT): 10 ms (drive)
 Checksum: correct

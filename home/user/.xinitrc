@@ -17,6 +17,6 @@ export XCURSOR_PATH=""
 # exec gnome-session
 # exec startkde
 #exec startxfce4
-exec openbox-session
-#exec i3
+#exec openbox-session
+exec i3
 # ...or the Window Manager of your choice
