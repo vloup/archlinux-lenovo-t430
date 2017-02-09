@@ -139,7 +139,10 @@ unset use_color sh
 [ -r /usr/share/git/completion/git-prompt.sh ] && . /usr/share/git/completion/git-prompt.sh
 
 # path
-export PATH="/usr/lib/ccache/bin:$PATH"
+echo "$PATH" | grep -q "/usr/lib/ccache/bin:"
+if [ "$?" -ne 0 ]; then
+        export PATH="/usr/lib/ccache/bin:$PATH"
+fi
 
 # aliases
 alias rm="rm --preserve-root --one-file-system"
