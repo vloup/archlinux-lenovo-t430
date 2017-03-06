@@ -168,6 +168,7 @@ exec nitrogen --set-zoom-fill ~/.i3/bla6b.png
 #exec synclient TouchpadOff=1
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
 
-#exec dropbox
+exec xfce4-clipman
 exec orage
 exec owncloud
+exec dropbox
