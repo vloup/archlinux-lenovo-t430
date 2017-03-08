@@ -11,8 +11,6 @@ URxvt.scrollBar_right: true
 ! Set the style of the scrollbar: rxvt (default), plain, next, xterm
 URxvt.scrollstyle: plain
 
-URxvt.font: 9x15
-
 Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
