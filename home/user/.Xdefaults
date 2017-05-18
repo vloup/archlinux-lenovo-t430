@@ -15,10 +15,12 @@ Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
-Xft.hintstyle: hintfull
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
 
-URxvt.font: xft:Monospace:size=10
-URxvt.boldfont: xft:Monospace-Bold:size=10
+URxvt.font: xft:Monospace:pixelsize=12
+URxvt.boldfont: xft:Monospace-Bold:pixelsize=12
 
 URxvt.color4: RoyalBlue
 URxvt.color12: RoyalBlue
