@@ -178,7 +178,7 @@ SOUND_POWER_SAVE_CONTROLLER=Y
 # or by pressing the disc eject button on newer models.
 # Note: an UltraBay/MediaBay hard disk is never powered off.
 BAY_POWEROFF_ON_AC=0
-BAY_POWEROFF_ON_BAT=0
+BAY_POWEROFF_ON_BAT=1
 # Optical drive device to power off (default sr0).
 BAY_DEVICE="sr0"
 
@@ -195,7 +195,7 @@ RUNTIME_PM_ON_BAT=auto
 # prevents accidential power-on of dGPU in hybrid graphics setups.
 # Use "" to disable the feature completely.
 # Separate multiple drivers with spaces.
-#RUNTIME_PM_DRIVER_BLACKLIST="amdgpu nouveau nvidia radeon"
+RUNTIME_PM_DRIVER_BLACKLIST="amdgpu nouveau nvidia radeon"
 
 # Set to 0 to disable, 1 to enable USB autosuspend feature.
 USB_AUTOSUSPEND=1
@@ -234,7 +234,7 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 
 # Radio devices to disable on startup: bluetooth, wifi, wwan.
 # Separate multiple devices with spaces.
-#DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"
+DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wwan"
 
 # Radio devices to enable on startup: bluetooth, wifi, wwan.
 # Separate multiple devices with spaces.
