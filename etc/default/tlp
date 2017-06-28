@@ -178,7 +178,7 @@ SOUND_POWER_SAVE_CONTROLLER=Y
 # or by pressing the disc eject button on newer models.
 # Note: an UltraBay/MediaBay hard disk is never powered off.
 BAY_POWEROFF_ON_AC=0
-BAY_POWEROFF_ON_BAT=1
+BAY_POWEROFF_ON_BAT=0
 # Optical drive device to power off (default sr0).
 BAY_DEVICE="sr0"
 
