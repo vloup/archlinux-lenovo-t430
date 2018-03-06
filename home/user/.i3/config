@@ -164,7 +164,8 @@ for_window [class="xfce4-notifyd" instance="xfce4-notifyd"] floating enable
 for_window [class="xfce4-notifyd" instance="xfce4-notifyd"] border none
 for_window [class="Orage" instance="orage"] floating enable
 
-exec nitrogen --set-zoom-fill ~/.i3/bla6b.png
+#exec nitrogen --set-zoom-fill ~/.i3/bla6b.png
+exec feh --bg-fill ~/.i3/bla6b.png
 
 exec xfce4-clipman
 exec orage

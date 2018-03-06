@@ -15,7 +15,8 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
-nitrogen --set-zoom-fill ~/.config/openbox/robitb_wallp_b.png
+#nitrogen --set-zoom-fill ~/.config/openbox/robitb_wallp_b.png
+feh --bg-fill ~/.config/openbox/robitb_wallp_b.png
 #synclient TouchpadOff=1
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
 xscreensaver -no-splash &
