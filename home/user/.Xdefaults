@@ -19,8 +19,8 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-URxvt.font: xft:Monospace:pixelsize=12
-URxvt.boldfont: xft:Monospace-Bold:pixelsize=12
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=12
+URxvt.boldfont: xft:DejaVu Sans Mono:style=Bold:pixelsize=12
 
 URxvt.color4: RoyalBlue
 URxvt.color12: RoyalBlue
