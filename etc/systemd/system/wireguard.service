@@ -1,0 +1,12 @@
+[Unit]
+Description=Wireguard
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/wg-quick up wireguard
+ExecStop=/usr/bin/wg-quick down wireguard
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
