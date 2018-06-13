@@ -33,7 +33,7 @@
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 ## Note: When using systemd socket activation, choose an empty set (i.e. [] ).
 
-listen_addresses = []
+listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
 
 ## Maximum number of simultaneous client connections to accept
@@ -75,6 +75,14 @@ require_nofilter = true
 ## only increase latency.
 
 force_tcp = false
+
+
+## HTTP / SOCKS proxy
+## Uncomment the following line to route all TCP connections to a local Tor node
+## Tor doesn't support UDP, so set `force_tcp` to `true` as well.
+
+# proxy = "socks5://127.0.0.1:9050"
+
 
 
 ## How long a DNS query will wait for a response, in milliseconds
