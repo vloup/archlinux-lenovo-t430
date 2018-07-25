@@ -138,7 +138,7 @@ unset use_color sh
 # path
 echo "$PATH" | grep -q "/usr/lib/ccache/bin:"
 if [ "$?" -ne 0 ]; then
-        export PATH="/usr/lib/ccache/bin:$PATH"
+	export PATH="/usr/lib/ccache/bin:$PATH"
 fi
 
 # aliases
