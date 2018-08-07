@@ -17,16 +17,26 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-set number
-set showcmd
-set ignorecase
 set autoindent
 set background=dark
-set mouse=a
+set formatoptions+=j
 set hlsearch
+set ignorecase
+set mouse=a
+set number
+set showcmd
+
+set listchars=tab:→\ ,trail:·,nbsp:·
+set list
+
+match ErrorMsg '\s\+$'
 
 syntax on
 
 source /etc/wordlist.vim
 
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" Keep selected text when editing indentation
+vnoremap < <gv
+vnoremap > >gv
