@@ -168,4 +168,4 @@ exec nitrogen --set-zoom-fill ~/.i3/bla6b.png
 
 exec xfce4-clipman
 exec orage
-exec owncloud
+exec nextcloud
