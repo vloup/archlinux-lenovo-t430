@@ -11,6 +11,17 @@ URxvt.scrollBar_right: true
 ! Set the style of the scrollbar: rxvt (default), plain, next, xterm
 URxvt.scrollstyle: plain
 
+! do not scroll with output
+URxvt.scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt.scrollWithNiffer: true
+! scroll back to the bottom on keypress
+URxvt.scrollTtyKeypress: true
+! scroll back buffer in secondary screen
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+URxvt.secondaryWheel: 1
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
@@ -31,5 +42,5 @@ URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 3
 URxvt.tabbed.tab-bg: 0
 
-URxvt.url-launcher: /usr/bin/firefox
+URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
