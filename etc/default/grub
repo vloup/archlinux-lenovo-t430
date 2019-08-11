@@ -1,15 +1,20 @@
+# GRUB boot loader configuration
+
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet elevator=noop"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet elevator=noop zswap.enabled=1 zswap.zpool=z3fold"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
 
-# Uncomment to enable Hidden Menu, and optionally hide the timeout count
-#GRUB_HIDDEN_TIMEOUT=5
-#GRUB_HIDDEN_TIMEOUT_QUIET=true
+# Uncomment to enable booting from LUKS encrypted devices
+#GRUB_ENABLE_CRYPTODISK=y
+
+# Set to 'countdown' or 'hidden' to change timeout behavior,
+# press ESC key to display menu.
+GRUB_TIMEOUT_STYLE=menu
 
 # Uncomment to use basic console
 GRUB_TERMINAL_INPUT=console
@@ -25,14 +30,14 @@ GRUB_GFXMODE=auto
 # Uncomment to allow the kernel use the same resolution used by grub
 GRUB_GFXPAYLOAD_LINUX=keep
 
-# Uncomment if you want GRUB to pass to the Linux kernel the old parameter 
-# format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx" 
+# Uncomment if you want GRUB to pass to the Linux kernel the old parameter
+# format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx"
 #GRUB_DISABLE_LINUX_UUID=true
 
 # Uncomment to disable generation of recovery mode menu entries
 GRUB_DISABLE_RECOVERY=true
 
-# Uncomment and set to the desired menu colors.  Used by normal and wallpaper 
+# Uncomment and set to the desired menu colors.  Used by normal and wallpaper
 # modes only.  Entries specified as foreground/background.
 #GRUB_COLOR_NORMAL="light-blue/black"
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
@@ -44,4 +49,6 @@ GRUB_BACKGROUND="/boot/grub/highwaytoshell-1600x900.png"
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
 
+# Uncomment to make GRUB remember the last selection. This requires to
+# set 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"
