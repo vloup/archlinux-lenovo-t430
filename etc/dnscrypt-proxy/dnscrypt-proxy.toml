@@ -31,6 +31,8 @@
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
+## Example with both IPv4 and IPv6:
+## listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
 listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
@@ -265,6 +267,11 @@ log_files_max_backups = 1
 block_ipv6 = false
 
 
+## Immediately respond to A and AAAA queries for host names without a domain name
+
+block_unqualified = true
+
+
 ## TTL for synthetic responses sent when a request has been blocked (due to
 ## IPv6 or blacklists).
 
@@ -335,6 +342,37 @@ cache_neg_min_ttl = 60
 ## Maximum TTL for negatively cached entries
 
 cache_neg_max_ttl = 600
+
+
+
+##################################
+#        Local DoH server        #
+##################################
+
+[local_doh]
+
+## dnscrypt-proxy can act as a local DoH server. By doing so, web browsers
+## requiring a direct connection to a DoH server in order to enable some
+## features will enable these, without bypassing your DNS proxy.
+
+## Addresses that the local DoH server should listen to
+
+listen_addresses = ['127.0.0.1:3000']
+
+
+## Path of the DoH URL. This is not a file, but the part after the hostname
+## in the URL. By convention, `/dns-query` is frequently chosen.
+## For each `listen_address` the complete URL to access the server will be:
+## `https://<listen_address><path>` (ex: `https://127.0.0.1/dns-query`)
+
+path = "/dns-query"
+
+
+## Certificate file and key - Note that the certificate has to be trusted.
+## See the documentation (wiki) for more information.
+
+cert_file = "cert.pem"
+cert_key_file = "key.pem"
 
 
 
@@ -618,7 +656,7 @@ broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield']
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
 # ]
 routes = [
-    { server_name='*', via=['anon-ibksturm', 'anon-kama', 'anon-scaleway', 'anon-cs-ch'] },
+    { server_name='*', via=['anon-ibksturm', 'anon-kama', 'anon-scaleway', 'anon-scaleway-ams', 'anon-scaleway-ams-ipv6', 'anon-cs-ch'] },
 ]
 
 
