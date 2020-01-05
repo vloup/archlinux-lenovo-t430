@@ -481,7 +481,7 @@ cert_key_file = "key.pem"
 
   ## Path to the file of blocking rules (absolute, or relative to the same directory as the config file)
 
-  # blacklist_file = '/etc/dnscrypt-proxy/ip-blacklist.txt'
+  blacklist_file = '/etc/dnscrypt-proxy/ip-blacklist-custom.txt'
 
 
   ## Optional path to a file logging blocked queries
