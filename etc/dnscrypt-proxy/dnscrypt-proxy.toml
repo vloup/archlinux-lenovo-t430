@@ -678,7 +678,7 @@ broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'quad9-dnsc
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
 # ]
 routes = [
-    { server_name='*', via=['anon-ibksturm', 'anon-kama', 'anon-scaleway', 'anon-scaleway-ams', 'anon-scaleway-ams-ipv6', 'anon-cs-ch'] },
+    { server_name='*', via=['anon-ibksturm', 'anon-ibksturm-ipv6', 'anon-kama', 'anon-scaleway', 'anon-scaleway-ams', 'anon-scaleway-ams-ipv6', 'anon-cs-ch'] },
 ]
 
 
