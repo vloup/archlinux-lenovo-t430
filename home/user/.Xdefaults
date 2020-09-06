@@ -15,13 +15,13 @@ URxvt.scrollstyle: plain
 ! do not scroll with output
 URxvt.scrollTtyOutput: false
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt.scrollWithNiffer: true
+URxvt.scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt.scrollTtyKeypress: true
 ! scroll back buffer in secondary screen
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
-URxvt.secondaryWheel: 1
+!URxvt.secondaryWheel: 1
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -31,10 +31,10 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=12
-URxvt.boldfont: xft:DejaVu Sans Mono:style=Bold:pixelsize=12
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=12, xft:FreeMono:pixelsize=12, xft:Noto Sans Mono:pixelsize=12, xft:Noto Sans Mono CJK JP:pixelsize=12
+URxvt.boldfont: xft:DejaVu Sans Mono:style=Bold:pixelsize=12, xft:FreeMono:style=Bold:pixelsize=12, xft:Noto Sans Mono:style=Bold,pixelsize=12, xft:Noto Sans Mono CJK JP:style=Bold:pixelsize=12
 
-URxvt.color4: RoyalBlue
+!URxvt.color4: RoyalBlue
 URxvt.color12: RoyalBlue
 
 URxvt.perl-ext-common: default,matcher,tabbed
@@ -45,3 +45,6 @@ URxvt.tabbed.tab-bg: 0
 
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline fg5
+
+URxvt.print-pipe: "cat > /tmp/urxvt.dump.log"
