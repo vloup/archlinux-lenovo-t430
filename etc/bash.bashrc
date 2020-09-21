@@ -26,6 +26,7 @@ shopt -s no_empty_cmd_completion
 
 # Enable history appending instead of overwriting when exiting.  #139609
 shopt -s histappend
+history -a
 
 # auto change directory
 shopt -s autocd
