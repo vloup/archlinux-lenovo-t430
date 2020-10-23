@@ -17,8 +17,8 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-" Use X11 clipboard, only available with gvim
-set clipboard=unnamedplus
+" Use X11 clipboards, only available with gvim
+set clipboard^=unnamed,unnamedplus
 
 set autoindent
 set background=dark
@@ -31,6 +31,11 @@ set showcmd
 
 set listchars=tab:→\ ,trail:·,nbsp:·
 set list
+
+set undodir=~/.vim/undodir
+set undofile
+
+set smarttab
 
 match ErrorMsg '\s\+$'
 
