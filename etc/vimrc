@@ -17,6 +17,9 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
+" Use X11 clipboard, only available with gvim
+set clipboard=unnamedplus
+
 set autoindent
 set background=dark
 set formatoptions+=j
