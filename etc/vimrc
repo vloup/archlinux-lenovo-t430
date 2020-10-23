@@ -35,6 +35,8 @@ set list
 set undodir=~/.vim/undodir
 set undofile
 
+set shiftwidth=8
+set softtabstop=8
 set smarttab
 
 match ErrorMsg '\s\+$'
