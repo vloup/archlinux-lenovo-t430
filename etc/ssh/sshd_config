@@ -58,7 +58,7 @@ PasswordAuthentication no
 #PermitEmptyPasswords no
 
 # Change to no to disable s/key passwords
-ChallengeResponseAuthentication no
+KbdInteractiveAuthentication no
 
 # Kerberos options
 #KerberosAuthentication no
@@ -84,13 +84,13 @@ UsePAM yes
 AllowAgentForwarding no
 AllowTcpForwarding no
 #GatewayPorts no
-#X11Forwarding yes
+#X11Forwarding no
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PermitTTY yes
 PrintMotd no # pam does that
 #PrintLastLog yes
-TCPKeepAlive no
+#TCPKeepAlive yes
 #PermitUserEnvironment no
 Compression no
 #ClientAliveInterval 0
@@ -106,7 +106,7 @@ ClientAliveCountMax 2
 #Banner none
 
 # override default of no subsystems
-Subsystem	sftp	/usr/lib/ssh/sftp-server
+Subsystem	sftp	/usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
