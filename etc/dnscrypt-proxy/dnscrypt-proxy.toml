@@ -214,7 +214,7 @@ tls_disable_session_tickets = true
 ## Bootstrap resolvers
 ##
 ## These are normal, non-encrypted DNS resolvers, that will be only used
-## for one-shot queries when retrieving the initial resolvers list and the
+## for one-shot queries when retrieving the initial resolvers list and if
 ## the system DNS configuration doesn't work.
 ##
 ## No user queries will ever be leaked through these resolvers, and they will
@@ -432,14 +432,14 @@ listen_addresses = ['127.0.0.1:3000']
 ## For each `listen_address` the complete URL to access the server will be:
 ## `https://<listen_address><path>` (ex: `https://127.0.0.1/dns-query`)
 
-path = "/dns-query"
+path = '/dns-query'
 
 
 ## Certificate file and key - Note that the certificate has to be trusted.
 ## See the documentation (wiki) for more information.
 
-cert_file = "cert.pem"
-cert_key_file = "key.pem"
+cert_file = '/etc/dnscrypt-proxy/cert.pem'
+cert_key_file = '/etc/dnscrypt-proxy/key.pem'
 
 
 
