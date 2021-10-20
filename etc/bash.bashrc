@@ -163,6 +163,9 @@ export HISTCONTROL=ignoreboth
 # trim directory in PS1 display
 export PROMPT_DIRTRIM=5
 
+# used by i3-sensible-terminal
+export TERMINAL="urxvtc"
+
 # generate a random 10 char alphanumeric password
 # usage: genpasswd [size]
 genpasswd()
