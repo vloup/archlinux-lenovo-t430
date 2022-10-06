@@ -12,8 +12,8 @@
 #  The locale-gen command will generate all the locales,
 #  placing them in /usr/lib/locale.
 #
-#  A list of supported locales is included in this file.
-#  Uncomment the ones you need.
+#  A list of supported locales is given in /usr/share/i18n/SUPPORTED
+#  and is included in this file. Uncomment the needed locales below.
 #
 #aa_DJ.UTF-8 UTF-8  
 #aa_DJ ISO-8859-1  
