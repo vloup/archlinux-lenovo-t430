@@ -144,6 +144,7 @@ fi
 
 # aliases
 alias rm="rm --preserve-root --one-file-system"
+alias sudo="sudo "
 alias nvidia-settings="optirun -b none nvidia-settings -c :8"
 alias :q="exit"
 alias cd..="cd .."
