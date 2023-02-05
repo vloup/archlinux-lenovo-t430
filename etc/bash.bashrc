@@ -42,7 +42,7 @@ shopt -s autocd
 
 # Change the window title of X terminals 
 case ${TERM} in
-	[aEkx]term*|rxvt*|gnome*|konsole*|interix|tmux)
+	[aEkx]term*|rxvt*|gnome*|konsole*|interix|tmux*)
 		PS1='\[\033]0;\u@\h:\w\007\]'
 		;;
 	screen*)
@@ -98,8 +98,6 @@ if ${use_color} ; then
 	#BSD#@export CLICOLOR=1
 	#GNU#@alias ls='ls --color=auto'
 	alias grep='grep --colour=auto'
-	alias egrep='egrep --colour=auto'
-	alias fgrep='fgrep --colour=auto'
 	alias diff="diff --color=auto"
 	alias dir="dir --color=auto"
 	alias dmesg="dmesg --color"
