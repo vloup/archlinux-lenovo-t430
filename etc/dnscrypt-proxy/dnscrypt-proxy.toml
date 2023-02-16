@@ -97,7 +97,7 @@ disabled_server_names = []
 force_tcp = false
 
 
-## Enable support for HTTP/3 (DoH3, HTTP over QUIC)
+## Enable *experimental* support for HTTP/3 (DoH3, HTTP over QUIC)
 ## Note that, like DNSCrypt but unlike other HTTP versions, this uses
 ## UDP and (usually) port 443 instead of TCP.
 
@@ -125,7 +125,7 @@ http3 = true
 timeout = 5000
 
 
-## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
+## Keepalive for HTTP (HTTPS, HTTP/2, HTTP/3) queries, in seconds
 
 keepalive = 30
 
@@ -186,6 +186,13 @@ use_syslog = true
 ## Delay, in minutes, after which certificates are reloaded
 
 cert_refresh_delay = 240
+
+
+## Initially don't check DNSCrypt server certificates for expiration, and
+## only start checking them after a first successful connection to a resolver.
+## This can be useful on routers with no battery-backed clock.
+
+# cert_ignore_timestamp = false
 
 
 ## DNSCrypt: Create a new, unique key for every single DNS query
@@ -698,13 +705,13 @@ allowed_names_file = '/etc/dnscrypt-proxy/allowed-names.txt'
 
   [sources.odoh-servers]
     urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-servers.md']
-    cache_file = 'odoh-servers.md'
+    cache_file = '/var/cache/dnscrypt-proxy/odoh-servers.md'
     minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
     refresh_delay = 24
     prefix = ''
   [sources.odoh-relays]
     urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-relays.md']
-    cache_file = 'odoh-relays.md'
+    cache_file = '/var/cache/dnscrypt-proxy/odoh-relays.md'
     minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
     refresh_delay = 24
     prefix = ''
