@@ -346,7 +346,7 @@ bootstrap_resolvers = ['9.9.9.9:53', '149.112.112.112:443', '84.54.11.13:53', '8
 ##   to the system DNS
 ##
 ## (*) this is incompatible with systemd sockets.
-## `listen_addrs` must not be empty.
+## `listen_addresses` must not be empty.
 
 ignore_system_dns = true
 
@@ -790,7 +790,7 @@ prefix = ''
 ### Quad9
 
 [sources.quad9-resolvers]
-  urls = ['https://www.quad9.net/quad9-resolvers.md']
+  urls = ['https://quad9.net/dnscrypt/quad9-resolvers.md', 'https://raw.githubusercontent.com/Quad9DNS/dnscrypt-settings/main/dnscrypt/quad9-resolvers.md']
   minisign_key = 'RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN'
   cache_file = '/var/cache/dnscrypt-proxy/quad9-resolvers.md'
   prefix = 'quad9-'
@@ -808,7 +808,7 @@ prefix = ''
 #  [sources.dnscry-pt-resolvers]
 #    urls = ["https://www.dnscry.pt/resolvers.md"]
 #    minisign_key = "RWQM31Nwkqh01x88SvrBL8djp1NH56Rb4mKLHz16K7qsXgEomnDv6ziQ"
-#    cache_file = "dnscry.pt-resolvers.md"
+#    cache_file = "/var/cache/dnscrypt-proxy/dnscry.pt-resolvers.md"
 #    refresh_delay = 73
 #    prefix = "dnscry.pt-"
 
@@ -851,7 +851,7 @@ fragments_blocked = [
 
 [doh_client_x509_auth]
 
-## Use a X509 certificate to authenticate yourself when connecting to DoH servers.
+## Use an X509 certificate to authenticate yourself when connecting to DoH servers.
 ## This is only useful if you are operating your own, private DoH server(s).
 ## 'creds' maps servers to certificates, and supports multiple entries.
 ## If you are not using the standard root CA, an optional "root_ca"
