@@ -447,7 +447,7 @@ reject_ttl = 10
 ##
 ## See the `example-cloaking-rules.txt` file for an example
 
-# cloaking_rules = '/etc/dnscrypt-proxy/cloaking-rules.txt'
+cloaking_rules = '/etc/dnscrypt-proxy/cloaking-rules.txt'
 
 ## TTL used when serving entries in cloaking-rules.txt
 
