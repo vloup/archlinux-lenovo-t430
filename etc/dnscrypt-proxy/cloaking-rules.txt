@@ -17,11 +17,11 @@ yandex.ru                familysearch.yandex.ru       # inline comments are allo
 
 =duckduckgo.com          safe.duckduckgo.com
 
-www.youtube.com          restrictmoderate.youtube.com
-m.youtube.com            restrictmoderate.youtube.com
-youtubei.googleapis.com  restrictmoderate.youtube.com
-youtube.googleapis.com   restrictmoderate.youtube.com
-www.youtube-nocookie.com restrictmoderate.youtube.com
+#www.youtube.com          restrictmoderate.youtube.com
+#m.youtube.com            restrictmoderate.youtube.com
+#youtubei.googleapis.com  restrictmoderate.youtube.com
+#youtube.googleapis.com   restrictmoderate.youtube.com
+#www.youtube-nocookie.com restrictmoderate.youtube.com
 
 # Multiple IP entries for the same name are supported.
 # In the following example, the same name maps both to IPv4 and IPv6 addresses:
