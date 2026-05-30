@@ -15,7 +15,7 @@ www.bing.com             strict.bing.com
 
 yandex.ru                familysearch.yandex.ru       # inline comments are allowed after a pound sign
 
-=duckduckgo.com          safe.duckduckgo.com
+=duckduckgo.com          noai.duckduckgo.com
 
 #www.youtube.com          restrictmoderate.youtube.com
 #m.youtube.com            restrictmoderate.youtube.com
