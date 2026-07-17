@@ -65,7 +65,7 @@ ipv4_servers = true
 # Use servers reachable over IPv6 -- Do not enable if you don't have IPv6 connectivity
 ipv6_servers = true
 
-# Use servers implementing the DNSCrypt protocol
+# Use servers implementing the DNSCrypt and PQDNSCrypt protocols
 dnscrypt_servers = true
 
 # Use servers implementing the DNS-over-HTTPS protocol
@@ -280,6 +280,14 @@ cert_refresh_delay = 240
 ## Only enable if you don't have a lot of network load
 
 dnscrypt_ephemeral_keys = true
+
+
+## PQDNSCrypt (DNSCrypt 2026): use post-quantum cryptography when supported
+## by the server.
+## This protects the confidentiality of your queries against future quantum
+## computers ("harvest now, decrypt later").
+
+pqdnscrypt = true
 
 
 ## DoH: Disable TLS session tickets - increases privacy but also latency
